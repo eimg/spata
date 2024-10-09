@@ -1,0 +1,52 @@
+# Essentials
+.env
+node_modules/
+
+# OS junks
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+$RECYCLE.BIN/
+
+# macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Others
+*.swp
+.idea
+cobertura.xml
+Config/secrets
+Packages
+.build
+xcuserdata
+*.xcodeproj
+.git/credentials
