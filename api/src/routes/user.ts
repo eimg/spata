@@ -34,8 +34,8 @@ router.get(
 			});
 
 			res.json(data);
-		}
-
-		res.status(400).json({ errors: result.array() });
+		} else {
+            res.status(400).json({ errors: result.array() });
+        }
 	},
 );

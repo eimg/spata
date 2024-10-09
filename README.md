@@ -74,6 +74,8 @@ See `package.json` for available scripts like `dev`, `seed`, and `migrate`.
 
 ### How to start
 
+Rename `prisma.env` to `.env`. Then:
+
 ```bash
 cd api
 npm install
