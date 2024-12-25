@@ -4,6 +4,7 @@ import { ThemeProvider as NavigationThemeProvider } from "@react-navigation/nati
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Appearance } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 import { LightTheme, DarkTheme } from "@/constants/themes";
 
@@ -42,6 +43,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 		<ThemeContext.Provider value={{ isDark, toggleTheme }}>
 			<NavigationThemeProvider value={isDark ? DarkTheme : LightTheme}>
 				{children}
+				<StatusBar style={isDark ? "light" : "dark"} />
 			</NavigationThemeProvider>
 		</ThemeContext.Provider>
 	);

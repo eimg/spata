@@ -1,13 +1,8 @@
+import React from "react";
 import { Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-import { StatusBar } from "expo-status-bar";
-
-import { useTheme } from "@/components/theme-provider";
-
 export default function TabLayout() {
-	const { isDark } = useTheme();
-
 	return (
 		<>
 			<Tabs
@@ -68,8 +63,6 @@ export default function TabLayout() {
 					}}
 				/>
 			</Tabs>
-
-			<StatusBar style={isDark ? "light" : "dark"} />
 		</>
 	);
 }
