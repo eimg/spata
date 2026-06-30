@@ -2,7 +2,7 @@ import { it, expect, describe } from "vitest";
 import { screen, render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 
-import App from "@/App";
+import App from "@/app";
 
 describe("math test", () => {
 	it("should be 3", () => {
